@@ -22,6 +22,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'rails_admin'
 gem 'devise'
 gem 'cancancan', '~> 1.15.0'
+gem 'carrierwave'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
