@@ -9,22 +9,23 @@ pt-BR:
       client:
         one: Cliente
         other: Clientes
-      comissions:
+      comission:
         one: Comissão
         other: Comissões
-      discounts:
+      discount:
         one: Desconto
         other: Descontos
-      products:
+      product:
         one: Produto
         other: Produtos
-      sales:
+      sale:
         one: Venda
         other: Vendas
     attributes:
       client:
         name: "Nome"
         company_name: "Nome da Empresa"
+        product: "Produto"
   views:
   admin:
     home:
