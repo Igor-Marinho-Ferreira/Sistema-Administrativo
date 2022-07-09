@@ -1,5 +1,16 @@
 RailsAdmin.config do |config|
 
+
+  config.main_app_name = ["Loja", ""]
+
+  config.navigation_static_links = {
+    'GitHub' => 'https://github.com/Igor-Marinho-Ferreira'
+  }
+   
+  config.navigation_static_label = "GitHub"
+
+
+
   ### Popular gems integration
 
   ## == Devise ==
@@ -24,6 +35,7 @@ RailsAdmin.config do |config|
   # config.show_gravatar = true
 
   config.model Sale do #config do model
+    navigation_icon 'fa fa-money'
     create do
       field  :client
       field  :sale_date
@@ -100,6 +112,32 @@ RailsAdmin.config do |config|
       field  :address
   
     end
+  end
+
+  config.model Discount do
+    parent Product
+  end
+  
+  config.model Sale do
+    parent User
+    weight -2
+  end
+  
+  config.model Comission do
+    parent User
+    weight -1
+  end
+  
+  config.model Client do
+    parent User
+  end
+  
+  config.model ProductQuantity do
+    visible false
+  end
+  
+  config.model Address do
+    visible false
   end
   
   config.model ProductQuantity do
